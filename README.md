@@ -1,8 +1,14 @@
 # Installation
 
-1. Install `vendure-product-recommendations` by using `npm` or `yarn`: `yarn add vendure-product-recommendations`
-2. Import the vendure plugin from `vendure-product-recommendations/plugin` and add it the `plugins` section inside `vendure-config.ts`
-    import { ProductRecommendationPlugin } from "vendure-product-recommendations/plugin";
+Step 1): Install `vendure-product-recommendations` by using `npm` or `yarn`:
+
+`yarn add vendure-product-recommendations`
+
+Step 2): Import the vendure plugin from `vendure-product-recommendations/plugin` and add it the `plugins` section in
+
+`vendure-config.ts`:
+	
+	import { ProductRecommendationPlugin } from "vendure-product-recommendations/plugin";
 	...
 	export const config: VendureConfig = {
 	    ...
@@ -11,7 +17,11 @@
 			ProductRecommendationPlugin
 		]
 	}
-3. (optional) Import the ng module config from `vendure-product-recommendations` and add it to the `AdminUiPlugin` extensions:
+
+Step 3): (optional) Import the ng module config from `vendure-product-recommendations` and add it to the `AdminUiPlugin` extensions in:
+
+`vendure-config.ts`:
+    
     import { ProductRecommendationsInputModule } from "vendure-product-recommendations";
 	...
 	export const config: VendureConfig = {
@@ -72,5 +82,10 @@ The following graphql endpoints are added:
         productRecommendations(productId: ID!): [ProductRecommendation!]!
     }
 
+# Known issues
+
+## UI
+- Currently one is required to manually press the save button in addition to the save button for the product
+
 # Screenshot
-![Screenshot][screenshot]
+![Screenshot](https://raw.githubusercontent.com/Tyratox/vendure-product-recommendations/master/screenshot.png)
