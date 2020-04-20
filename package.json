@@ -1,0 +1,25 @@
+{
+  "name": "vendure-product-recommendations",
+  "version": "0.1.0",
+  "description": "Adds product recommendations to vendure",
+  "main": "lib/index.js",
+  "repository": "https://github.com/Tyratox/vendure-product-recommendations",
+  "author": "Nico Hauser",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf lib && tsc"
+  },
+  "devDependencies": {
+    "@types/prosemirror-menu": "^1.0.1",
+    "@types/prosemirror-model": "^1.7.2",
+    "@types/prosemirror-state": "^1.2.3",
+    "@types/prosemirror-view": "^1.11.4",
+    "@vendure/admin-ui-plugin": "^0.11.0",
+    "@vendure/common": "^0.11.0",
+    "@vendure/core": "^0.11.0",
+    "@vendure/ui-devkit": "^0.11.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {}
+}
