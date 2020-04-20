@@ -3,7 +3,7 @@ import { FindManyOptions } from "typeorm/find-options/FindManyOptions";
 import { ID } from "@vendure/core";
 import { DeletionResponse } from "@vendure/common/lib/generated-types";
 import { ProductRecommendation } from "./product-recommendation.entity";
-import { ProductRecommendationInput } from "./product-recommendations";
+import { ProductRecommendationInput } from "./index";
 export declare class ProductRecommendationService {
     private connection;
     constructor(connection: Connection);

@@ -15,7 +15,7 @@ import {
   DeletionResult,
 } from "@vendure/common/lib/generated-types";
 import { ProductRecommendation } from "./product-recommendation.entity";
-import { ProductRecommendationInput } from "./product-recommendations";
+import { ProductRecommendationInput } from "./index";
 
 @Injectable()
 export class ProductRecommendationService {
