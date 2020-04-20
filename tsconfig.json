@@ -12,9 +12,18 @@
     "strictPropertyInitialization": false,
     "removeComments": false,
     "outDir": "./lib",
-    "rootDirs": ["./src"],
-    "declaration": true
+    "rootDirs": [
+      "./src"
+    ],
+    "declaration": true,
+    "paths": {},
+	"allowSyntheticDefaultImports": true
   },
-  "files": ["./src/index.ts", "./src/plugin/index.ts", "./src/ui-extensions/modules/product-recommendations-input.module.ts"],
-  "exclude": ["node_modules"]
+  "files": [
+    "./src/index.ts",
+    "./src/plugin/index.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

@@ -7,9 +7,12 @@
   "author": "Nico Hauser",
   "license": "MIT",
   "scripts": {
-    "build": "rimraf lib && tsc && cp ./package.json ./lib/package.json"
+    "build": "rimraf lib && ng build --prod && tsc"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~0.901.1",
+    "@angular-devkit/build-ng-packagr": "~0.901.1",
+    "@angular/compiler-cli": "~9.1.1",
     "@types/prosemirror-menu": "^1.0.1",
     "@types/prosemirror-model": "^1.7.2",
     "@types/prosemirror-state": "^1.2.3",
@@ -18,10 +21,15 @@
     "@vendure/common": "^0.11.0",
     "@vendure/core": "^0.11.0",
     "@vendure/ui-devkit": "^0.11.0",
+    "ng-packagr": "^9.0.0",
     "rimraf": "^3.0.2",
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "vendure-product-recommendations": "https://github.com/Tyratox/vendure-product-recommendations"
+    "tslib": "^1.11.1"
+  },
+  "peerDependencies": {
+    "@angular/common": "^9.1.2",
+    "@angular/core": "^9.1.2"
   }
 }
