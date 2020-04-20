@@ -11,11 +11,11 @@ Step 2): Import the vendure plugin from `vendure-product-recommendations/plugin`
 	import { ProductRecommendationPlugin } from "vendure-product-recommendations/plugin";
 	...
 	export const config: VendureConfig = {
-	    ...
-		plugins: [
-		    ...,
-			ProductRecommendationPlugin
-		]
+	  ...
+	  plugins: [
+	    ...,
+		ProductRecommendationPlugin
+	  ]
 	}
 
 Step 3): (optional) Import the ng module config from `vendure-product-recommendations` and add it to the `AdminUiPlugin` extensions in:
@@ -25,22 +25,23 @@ Step 3): (optional) Import the ng module config from `vendure-product-recommenda
     import { ProductRecommendationsInputModule } from "vendure-product-recommendations";
 	...
 	export const config: VendureConfig = {
-	    ...
-		plugins: [
-		    AdminUiPlugin.init({
-				app: compileUiExtensions({
-					...
-					extensions: [
-						{
-							extensionPath: path.join(
-								__dirname,
-								"../node_modules/vendure-product-recommendations/ui-extensions/modules/"
-							),
-							ngModules: [ProductRecommendationsInputModule],
-						},
-					]
-			})
-		]
+	  ...
+	  plugins: [
+	    AdminUiPlugin.init({
+		  app: compileUiExtensions({
+		    ...,
+			extensions: [
+			  {
+			    extensionPath: path.join(
+				  __dirname,
+				  "../node_modules/vendure-product-recommendations/ui-extensions/modules/"
+				),
+				ngModules: [ProductRecommendationsInputModule],
+			  },
+			]
+		  })
+		})
+	  ]
 	}
 
 # Usage
