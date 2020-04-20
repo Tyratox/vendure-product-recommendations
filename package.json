@@ -1,6 +1,7 @@
 {
   "name": "vendure-product-recommendations",
   "version": "0.1.0",
+  "main": "./lib/index.js",
   "description": "Adds product recommendations to vendure",
   "repository": "https://github.com/Tyratox/vendure-product-recommendations",
   "author": "Nico Hauser",
@@ -20,5 +21,7 @@
     "rimraf": "^3.0.2",
     "typescript": "^3.8.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "vendure-product-recommendations": "https://github.com/Tyratox/vendure-product-recommendations"
+  }
 }

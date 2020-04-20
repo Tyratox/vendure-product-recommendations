@@ -15,6 +15,6 @@
     "rootDirs": ["./src"],
     "declaration": true
   },
-  "files": ["./src/plugin/index.ts", "./src/ui-extensions/index.ts"],
+  "files": ["./src/index.ts", "./src/plugin/index.ts", "./src/ui-extensions/modules/product-recommendations-input.module.ts"],
   "exclude": ["node_modules"]
 }
