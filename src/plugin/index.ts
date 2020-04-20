@@ -41,7 +41,6 @@ const adminSchemaExtension = gql`
   extend type Mutation {
     updateCrossSellingProducts(productId: ID!, productIds: [ID!]): Boolean!
     updateUpSellingProducts(productId: ID!, productIds: [ID!]): Boolean!
-    productRecommendations(productId: ID!): [ProductRecommendation!]!
   }
 `;
 

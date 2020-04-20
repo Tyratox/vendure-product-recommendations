@@ -1,4 +1,10 @@
-import { NgModule, Component, OnInit, OnDestroy } from "@angular/core";
+import {
+  NgModule,
+  Component,
+  OnInit,
+  OnDestroy,
+  ChangeDetectorRef,
+} from "@angular/core";
 import { ID, LanguageCode } from "@vendure/core";
 import { notify } from "@vendure/ui-devkit";
 import { Observable, Subject, of } from "rxjs";
@@ -68,7 +74,11 @@ export class ProductRecommendationsControl
 
   protected destroy$ = new Subject<void>();
 
-  constructor(private route: ActivatedRoute, private dataService: DataService) {
+  constructor(
+    private route: ActivatedRoute,
+    private dataService: DataService,
+    private cdr: ChangeDetectorRef
+  ) {
     this.crossSell = [];
     this.upSell = [];
   }
@@ -117,7 +127,6 @@ export class ProductRecommendationsControl
               }
             >response;
 
-            console.log(res);
             this.crossSell = res.productRecommendations
               .filter((r) => r.type === "CROSSSELL")
               .map((r) => ({
@@ -131,9 +140,11 @@ export class ProductRecommendationsControl
                 productName: r.recommendation.name,
               }));
 
-            //enable search
             this.crossSellLoading = false;
             this.upSellLoading = false;
+            this.cdr.detectChanges();
+
+            //enable search
             this.searchProducts();
           })
           .catch((e) => {
