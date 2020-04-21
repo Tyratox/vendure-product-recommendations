@@ -89,4 +89,4 @@ const shopSchemaExtension = gql`
     return config;
   },
 })
-export class ProductRecommendationPlugin {}
+export class ProductRecommendationsPlugin {}

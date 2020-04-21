@@ -5,5 +5,5 @@ export declare type ProductRecommendationInput = {
     recommendation: ID;
     type: RecommendationType;
 };
-export declare class ProductRecommendationPlugin {
+export declare class ProductRecommendationsPlugin {
 }
