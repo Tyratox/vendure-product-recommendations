@@ -1,10 +1,4 @@
-import {
-  NgModule,
-  Component,
-  OnInit,
-  OnDestroy,
-  ChangeDetectorRef,
-} from "@angular/core";
+import { NgModule, Component, OnInit, ChangeDetectorRef } from "@angular/core";
 import { ID, LanguageCode } from "@vendure/core";
 import { notify } from "@vendure/ui-devkit";
 import { Observable, Subject, of } from "rxjs";
@@ -57,9 +51,8 @@ type ProductSearch = {
   `,
 })
 export class ProductRecommendationsControl
-  implements CustomFieldControl, OnInit, OnDestroy {
+  implements CustomFieldControl, OnInit {
   productId: ID | null;
-  languageCode$: Observable<LanguageCode>;
 
   customFieldConfig: CustomFieldConfigType;
   formControl: FormControl;
@@ -71,8 +64,6 @@ export class ProductRecommendationsControl
   upSellLoading = true;
   crossSellLoading = true;
   productInput$ = new Subject<string>();
-
-  protected destroy$ = new Subject<void>();
 
   constructor(
     private route: ActivatedRoute,
@@ -158,8 +149,6 @@ export class ProductRecommendationsControl
       }
     });
   }
-
-  ngOnDestroy() {}
 
   searchProducts() {
     this.productSearchUpSell$ = this.productInput$.pipe(

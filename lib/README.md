@@ -1,3 +1,15 @@
+# About
+
+This vendure plugin adds product recommendations, namely cross- and upselling, to the products. It's up to your frontend to fetch them, a graphql API is provided.
+
+# Screenshot
+![Screenshot](https://raw.githubusercontent.com/Tyratox/vendure-product-recommendations/master/screenshot.png)
+
+# Disclaimers
+
+- I haven't worked with angular a lot, I'm sorry if some of my angular code looks more like react. Feel free to tell me what should be done differently.
+- **There are no tests yet!**
+
 # Installation
 
 Step 1): Install `vendure-product-recommendations` by using `npm` or `yarn`:
@@ -85,8 +97,8 @@ The following graphql endpoints are added:
 
 # Known issues
 
+## Code
+- The integration in the admin ui is a little hacky, especially the retrieval of the product and variant id/sku
+
 ## UI
 - Currently one is required to manually press the save button in addition to the save button for the product
-
-# Screenshot
-![Screenshot](https://raw.githubusercontent.com/Tyratox/vendure-product-recommendations/master/screenshot.png)

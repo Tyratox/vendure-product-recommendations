@@ -1,6 +1,6 @@
 {
   "name": "vendure-product-recommendations",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "main": "./lib/index.js",
   "description": "Adds product recommendations to vendure",
   "repository": "https://github.com/Tyratox/vendure-product-recommendations",
