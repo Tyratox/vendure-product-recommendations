@@ -29,3 +29,8 @@ export declare class ProductRecommendationEntityResolver {
     constructor(productService: ProductService);
     recommendation(ctx: RequestContext, recommendation: ProductRecommendation): Promise<Translated<Product>>;
 }
+export declare class ProductEntityResolver {
+    private productRecommendationService;
+    constructor(productRecommendationService: ProductRecommendationService);
+    recommendations(ctx: RequestContext, product: Product): Promise<ProductRecommendation[]>;
+}

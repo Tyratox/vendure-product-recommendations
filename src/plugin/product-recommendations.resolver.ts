@@ -153,3 +153,20 @@ export class ProductRecommendationEntityResolver {
     return product;
   }
 }
+
+@Resolver("Product")
+export class ProductEntityResolver {
+  constructor(
+    private productRecommendationService: ProductRecommendationService
+  ) {}
+
+  @ResolveField()
+  async recommendations(
+    @Ctx() ctx: RequestContext,
+    @Parent() product: Product
+  ): Promise<ProductRecommendation[]> {
+    return this.productRecommendationService.findAll({
+      where: { productId: product.id },
+    });
+  }
+}

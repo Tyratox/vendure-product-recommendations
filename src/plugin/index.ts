@@ -14,6 +14,7 @@ import {
   ProductRecommendationAdminResolver,
   ProductRecommendationShopResolver,
   ProductRecommendationEntityResolver,
+  ProductEntityResolver,
 } from "./product-recommendations.resolver";
 import { ProductRecommendationService } from "./product-recommendations.service";
 
@@ -42,6 +43,10 @@ const adminSchemaExtension = gql`
     updateCrossSellingProducts(productId: ID!, productIds: [ID!]!): Boolean!
     updateUpSellingProducts(productId: ID!, productIds: [ID!]!): Boolean!
   }
+
+  extend type Product {
+    recommendations: [ProductRecommendation!]!
+  }
 `;
 
 const shopSchemaExtension = gql`
@@ -58,6 +63,9 @@ const shopSchemaExtension = gql`
   extend type Query {
     productRecommendations(productId: ID!): [ProductRecommendation!]!
   }
+  extend type Product {
+    recommendations: [ProductRecommendation!]!
+  }
 `;
 
 @VendurePlugin({
@@ -69,6 +77,7 @@ const shopSchemaExtension = gql`
     resolvers: [
       ProductRecommendationAdminResolver,
       ProductRecommendationEntityResolver,
+      ProductEntityResolver,
     ],
   },
   shopApiExtensions: {
@@ -76,6 +85,7 @@ const shopSchemaExtension = gql`
     resolvers: [
       ProductRecommendationShopResolver,
       ProductRecommendationEntityResolver,
+      ProductEntityResolver,
     ],
   },
   configuration: (config) => {
