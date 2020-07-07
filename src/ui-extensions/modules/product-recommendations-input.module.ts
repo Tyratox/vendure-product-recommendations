@@ -1,10 +1,12 @@
-import { NgModule, Component, OnInit, ChangeDetectorRef } from "@angular/core";
-import { ID, LanguageCode } from "@vendure/core";
+import {
+  NgModule,
+  Component,
+  OnInit,
+  OnDestroy,
+  ChangeDetectorRef,
+} from "@angular/core";
 import { notify } from "@vendure/ui-devkit";
-import { Observable, Subject, of } from "rxjs";
-import { parse } from "graphql";
-import { distinctUntilChanged, switchMap, tap } from "rxjs/operators";
-import { FormControl } from "@angular/forms";
+import { FormsModule, FormControl } from "@angular/forms";
 import {
   SharedModule,
   CustomFieldControl,
@@ -13,6 +15,11 @@ import {
   DataService,
 } from "@vendure/admin-ui/core";
 import { ActivatedRoute } from "@angular/router";
+import { ID } from "@vendure/core";
+import { parse } from "graphql";
+import { Observable, Subject, of } from "rxjs";
+import { distinctUntilChanged, switchMap, tap } from "rxjs/operators";
+import { NgSelectModule } from "@ng-select/ng-select";
 
 type ProductSearch = {
   search: { items: { productId: ID; productName: string }[] };
@@ -51,7 +58,7 @@ type ProductSearch = {
   `,
 })
 export class ProductRecommendationsControl
-  implements CustomFieldControl, OnInit {
+  implements CustomFieldControl, OnInit, OnDestroy {
   productId: ID | null;
 
   customFieldConfig: CustomFieldConfigType;
@@ -150,6 +157,8 @@ export class ProductRecommendationsControl
     });
   }
 
+  ngOnDestroy() {}
+
   searchProducts() {
     this.productSearchUpSell$ = this.productInput$.pipe(
       distinctUntilChanged(),
@@ -213,7 +222,7 @@ export class ProductRecommendationsControl
 }
 
 @NgModule({
-  imports: [SharedModule],
+  imports: [SharedModule, FormsModule, NgSelectModule],
   declarations: [ProductRecommendationsControl],
   providers: [
     registerCustomFieldComponent(
