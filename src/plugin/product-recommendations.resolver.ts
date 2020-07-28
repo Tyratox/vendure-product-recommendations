@@ -166,7 +166,7 @@ export class ProductEntityResolver {
     @Parent() product: Product
   ): Promise<ProductRecommendation[]> {
     return this.productRecommendationService.findAll({
-      where: { productId: product.id },
+      where: { product: product.id },
     });
   }
 }
