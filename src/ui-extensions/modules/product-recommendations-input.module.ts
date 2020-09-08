@@ -39,6 +39,7 @@ type ProductSearch = {
         [typeahead]="productInput$"
         [(ngModel)]="upSell"
         bindLabel="productName"
+        [readonly]="readonly"
       ></ng-select>
       <div>Crosssells</div>
       <ng-select
@@ -50,6 +51,7 @@ type ProductSearch = {
         [typeahead]="productInput$"
         [(ngModel)]="crossSell"
         bindLabel="productName"
+        [readonly]="readonly"
       ></ng-select>
       <button class="btn btn-primary" (click)="saveProductRecommendations()">
         Save
@@ -61,7 +63,8 @@ export class ProductRecommendationsControl
   implements CustomFieldControl, OnInit, OnDestroy {
   productId: ID | null;
 
-  customFieldConfig: CustomFieldConfigType;
+  config: CustomFieldConfigType;
+  readonly: boolean;
   formControl: FormControl;
   crossSell: { productId: ID; productName: string }[];
   upSell: { productId: ID; productName: string }[];
