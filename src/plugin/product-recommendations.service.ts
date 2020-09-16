@@ -51,13 +51,13 @@ export class ProductRecommendationService {
     return assertFound(this.findOne(newRecommendation.id));
   }
 
-  async delete(productId: ID, ids: ID[]): Promise<DeletionResponse> {
+  async delete(ids: ID[]): Promise<DeletionResponse> {
     try {
       await this.connection
         .createQueryBuilder()
         .delete()
         .from(ProductRecommendation)
-        .where({ product: productId, recommendation: In(ids) })
+        .where({ id: In(ids) })
         .execute();
 
       return {

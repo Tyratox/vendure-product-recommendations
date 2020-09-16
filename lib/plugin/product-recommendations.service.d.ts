@@ -10,5 +10,5 @@ export declare class ProductRecommendationService {
     findAll(options: FindManyOptions<ProductRecommendation> | undefined): Promise<ProductRecommendation[]>;
     findOne(recommendationId: ID): Promise<ProductRecommendation | undefined>;
     create(input: ProductRecommendationInput): Promise<ProductRecommendation>;
-    delete(productId: ID, ids: ID[]): Promise<DeletionResponse>;
+    delete(ids: ID[]): Promise<DeletionResponse>;
 }

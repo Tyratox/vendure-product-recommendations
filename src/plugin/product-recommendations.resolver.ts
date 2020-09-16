@@ -59,9 +59,7 @@ export class ProductRecommendationAdminResolver {
     );
 
     if (toDelete.length > 0) {
-      promises.push(
-        this.productRecommendationService.delete(args.productId, toDelete)
-      );
+      promises.push(this.productRecommendationService.delete(toDelete));
     }
 
     await Promise.all(promises);
@@ -96,7 +94,7 @@ export class ProductRecommendationAdminResolver {
           type: RecommendationType.UPSELL,
         })
       ),
-      this.productRecommendationService.delete(args.productId, toDelete),
+      this.productRecommendationService.delete(toDelete),
     ]);
 
     return true;
