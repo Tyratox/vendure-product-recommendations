@@ -231,15 +231,15 @@
     ora "4.0.3"
     rxjs "6.5.4"
 
-"@angular/animations@9.1.0":
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-9.1.0.tgz#3030e290683c0e2d63fa61060d36f659511d3b2c"
-  integrity sha512-o7X3HM+eocoryw3VrDUtG6Wci2KwtzyBFo3KBJXjQ16X6fwdkjTG+hLb7pp2CBFBEJW4tPYEy7cSBmEfMRTqag==
+"@angular/animations@9.1.7":
+  version "9.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-9.1.7.tgz#09bf7c84c234d8b6ecaa101024a3b3e69ab198cd"
+  integrity sha512-1wW8ndGMLDuE2LpTN2RNRz1Dt7JgVBeVmOPMgzoA7g1uuvm+jESTrGG7W3BzLzG0BE2TeXt0fY90o4iU+S2Rmg==
 
-"@angular/cdk@9.2.0":
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-9.2.0.tgz#587e4a9d5046fa89a68d8eddaee6b185e2915842"
-  integrity sha512-jeeznvNDpR9POuxzz8Y0zFvMynG9HCJo3ZPTqOjlOq8Lj8876+rLsHDvKEMeLdwlkdi1EweYJW1CLQzI+TwqDA==
+"@angular/cdk@9.2.3":
+  version "9.2.3"
+  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-9.2.3.tgz#e0f7d4eaeca429346e15bd258966fbb5a5f4ed0b"
+  integrity sha512-tQr/yt8GNGsZ/DTT+PMq7XdRmL56hwVCyf8F12JQAawutSLfTfMb+S1lpN7L/0Pb/L5JBuCfG2HmXK7vHo02gw==
   optionalDependencies:
     parse5 "^5.0.0"
 
@@ -269,10 +269,10 @@
     universal-analytics "0.4.20"
     uuid "7.0.2"
 
-"@angular/common@9.1.0":
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/@angular/common/-/common-9.1.0.tgz#f9b5353a28f9da6c06266bc7244bbabf9e005176"
-  integrity sha512-6JPLNtMhI03bGTVQJeSwc+dTjV6DtP7M/BAyzIV0InZP1D6XsOh2QahLFIaaN2sSxYA2ClKuwfX1v+rx9AbXQA==
+"@angular/common@9.1.7":
+  version "9.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/common/-/common-9.1.7.tgz#79ebbe3c08ced0070314beb10bbccfb8927dfe62"
+  integrity sha512-04ef+J8bnOnjYbdRsm82IdIaaLFZ6QWh4SLtjnYhgCjEe4Stf59g+zRNPMauMFDQYDCp3foPo0djk1CPfEd8AQ==
 
 "@angular/compiler-cli@^9.0.6", "@angular/compiler-cli@~9.1.1":
   version "9.1.2"
@@ -297,35 +297,35 @@
   resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-9.1.2.tgz#52b22120ca3c7d27dccf4239c849158ad64fb435"
   integrity sha512-82DitvlZA5DoE++qiiJdgx6HE71h96sfLHCjjvYJHApoOcnX+zBZFBrflpbXK9W4YdvydU4Lc1Ql1eleQPeT/g==
 
-"@angular/core@9.1.0":
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/@angular/core/-/core-9.1.0.tgz#9dfc386bd1461e0fd4786031fd245da04371421c"
-  integrity sha512-RVlyegdIAij0P1wLY5ObIdsBAzvmHkHfElnmfiNKhaDftP6U/3zRtaKDu0bq0jvn1WCQ8zXxFQ8AWyKZwyFS+w==
+"@angular/core@9.1.7":
+  version "9.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-9.1.7.tgz#0465c26d9101389602e3ff9e502f83f3655e9fe1"
+  integrity sha512-uJSZ+rdGL47gc3A+Fal1XwJYB4WWpYJrNifvoQ2nOs+X5Qu+j0HN6GXPJb4kixoNzjYCGxmLoirdT3xhNZFcfQ==
 
-"@angular/forms@9.1.0":
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-9.1.0.tgz#de14e34aa37bd41a28f93fee8666cd7f6393078c"
-  integrity sha512-5GC8HQlPChPV+168zLlm4yj4syA6N9ChSKV0tmzj1zIfMcub1UAOaB9IYaXRHQsjPFh9OuQXwmkzScyAfhEVjA==
+"@angular/forms@9.1.7":
+  version "9.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-9.1.7.tgz#cdefbc7c7093fd37b417975f18b875a798cbd2d9"
+  integrity sha512-/bRs5hSFDUjOrq2vw11HoS25oEu7KYVxPbQiEjeBHJo82yDmSO+1cVukh6ulDi7iv1sJwSzikDtE9+xDx1ocfQ==
 
-"@angular/language-service@9.1.0":
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-9.1.0.tgz#b61aeec3469f0f33fec7bd30e6ad729cdf10b160"
-  integrity sha512-2f8ECoXrj40oS1rtIfi+F8T4WPzundcZDs8WMFNBuWYbk14v1S9sTgMEmZyePHGkPjt6IfYiLJKJCvVgrt1nxQ==
+"@angular/language-service@9.1.7":
+  version "9.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-9.1.7.tgz#d8d62872b8a7df61e2d0e4f546680f0a5450f6c9"
+  integrity sha512-p4WOZFCn6H5qgII9MbPjSu/AErt0rXpsXlMHC9KJl+JgfPI3YwQuX1dLdt3xTJlxuv8/fY9UbgmPJUqR/txRCg==
 
-"@angular/platform-browser-dynamic@9.1.0":
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-9.1.0.tgz#830bd5038d1875736e87e68c3aef44f0f835e418"
-  integrity sha512-sMtz/poQ3TYaWZzWjrn9apKUZ/WKql2MYCWbpax7pql3GgC9OoTslc7ZEe7/d3ynfFE/CQqWBBOuWGD71Z0LMQ==
+"@angular/platform-browser-dynamic@9.1.7":
+  version "9.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-9.1.7.tgz#cf20e8f9ba3512ca906d7f21cf0926f0222a95ad"
+  integrity sha512-DyUDGxp4kF4majcm9COVzu/9wzmgnfj+d6GUEjYkbqSH9QP05LonJ6wHMNxNMN6qMfawdCxDe0TnNDRPmHUj9w==
 
-"@angular/platform-browser@9.1.0":
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-9.1.0.tgz#0bd40db37c9e314944c149de935b0f6cdd1f7350"
-  integrity sha512-OsS/blUjl8ranmDaRADjFAmvnlmwbT6WNU7dVov7FhV0rqesbwaOJ5bR0LSYHYpej7Jaa6oYk0v0XWkaH9LTFg==
+"@angular/platform-browser@9.1.7":
+  version "9.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-9.1.7.tgz#47e473660c772f80245bcf872aa7e3df9e875a70"
+  integrity sha512-zwNCnn4Ozax80YrkFcLoQ/7bVR7jPk7+QT++Nf9MmQwsaqa0Ve1IYa6Hg9Y1Kf4wquI9TdxMN17TPKmX8iNIaA==
 
-"@angular/router@9.1.0":
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/@angular/router/-/router-9.1.0.tgz#df059c0f64fa41ada8f6b5ce741fe47d49f10194"
-  integrity sha512-cExO1nPnoPFiUJWZ28hTHozPLFoCmqr3xqcM57We0hhKE0esdrO+gRWKRH0EJERukLbU8coPKVhA8daGUpASiQ==
+"@angular/router@9.1.7":
+  version "9.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/router/-/router-9.1.7.tgz#ce9af75cec470f69122f2217bd5bdcfac7b74201"
+  integrity sha512-ycrkhkCbfOMCe9PngFjnyk8nH5jt0Kyb2NPtjmaGOtSCuZBZ0kOU0rQGmQnj3d2PiT0Yir59S8eEAf3Fh0iDuw==
 
 "@apollo/federation@^0.13.2":
   version "0.13.2"
@@ -1402,6 +1402,14 @@
     multer "1.4.2"
     tslib "1.11.1"
 
+"@nestjs/terminus@7.0.1":
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/terminus/-/terminus-7.0.1.tgz#7d748f8c18973d60023a8ab16760d0adab145b8b"
+  integrity sha512-OKg1QQDb+whHJM3Xt+3RRUPiyZSyD0qLacfldK0TXcFpKyexA0yyY3GKeaBNApf01FEzJgkK3ARCUoELnAfXDA==
+  dependencies:
+    check-disk-space "2.1.0"
+    deprecate "^1.1.1"
+
 "@nestjs/testing@7.0.5":
   version "7.0.5"
   resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-7.0.5.tgz#b6d6ee4de31669e87e231d18b73f2f76e358719c"
@@ -1980,27 +1988,27 @@
   resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.0.tgz#8b63ab7f1aa5321248aad5ac890a485656dcea4d"
   integrity sha512-te5lMAWii1uEJ4FwLjzdlbw3+n0FZNOvFXHxQDKeT0dilh7HOzdMzV2TrJVUzq8ep7J4Na8OUYPRLSQkJHAlrg==
 
-"@vendure/admin-ui-plugin@^0.11.0":
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/@vendure/admin-ui-plugin/-/admin-ui-plugin-0.11.0.tgz#a1a0f6e85bbcfb120c765f9ee781cbacc31b9316"
-  integrity sha512-/Kby2gn337ozh/DLebGJqMu9wbMUzK0s4PvUf/BtB8tVlaCVPR5DcoErD2c5EUpNfvckktvTmqGDuU/xgB1n4Q==
+"@vendure/admin-ui-plugin@^0.15.0":
+  version "0.15.2"
+  resolved "https://registry.yarnpkg.com/@vendure/admin-ui-plugin/-/admin-ui-plugin-0.15.2.tgz#40ba4a62427ec53cc90948ef85639dfc6dba0c1e"
+  integrity sha512-IlPd6ilBampF2STg3CNftUbAhLEaByR5bqw2Pyss0Llaj4d0dD+5WcrRoVohf+M6010F2hixHKqj28Tn1OP3rQ==
   dependencies:
     fs-extra "^9.0.0"
 
-"@vendure/admin-ui@^0.11.0":
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/@vendure/admin-ui/-/admin-ui-0.11.0.tgz#f0fd5a1a9a9da98739e63640a6bb25e4a14000f3"
-  integrity sha512-rGzy1RFTXFvqXpT3UfV3ga2CGg3edYe/kDjhigxx9G6Vz8Zk5K5czBXfwMOlx9hsHj2YAtnzLeN1SgMI2cuwkQ==
+"@vendure/admin-ui@^0.15.2":
+  version "0.15.2"
+  resolved "https://registry.yarnpkg.com/@vendure/admin-ui/-/admin-ui-0.15.2.tgz#e15d96d9ec07d36ec034a08150923175756b1f3a"
+  integrity sha512-MZCa6UA8GKYSUcKmbWf0Em5u1kyGJd5ds2LRtu1AlV3e/1/uMYy+7YsfAhW3T2NK5DWTWv6qKnqCcNWKp685lA==
   dependencies:
-    "@angular/animations" "9.1.0"
-    "@angular/cdk" "9.2.0"
-    "@angular/common" "9.1.0"
-    "@angular/core" "9.1.0"
-    "@angular/forms" "9.1.0"
-    "@angular/language-service" "9.1.0"
-    "@angular/platform-browser" "9.1.0"
-    "@angular/platform-browser-dynamic" "9.1.0"
-    "@angular/router" "9.1.0"
+    "@angular/animations" "9.1.7"
+    "@angular/cdk" "9.2.3"
+    "@angular/common" "9.1.7"
+    "@angular/core" "9.1.7"
+    "@angular/forms" "9.1.7"
+    "@angular/language-service" "9.1.7"
+    "@angular/platform-browser" "9.1.7"
+    "@angular/platform-browser-dynamic" "9.1.7"
+    "@angular/router" "9.1.7"
     "@biesbjerg/ngx-translate-extract-marker" "^1.0.0"
     "@clr/angular" "^3.0.0"
     "@clr/core" "^3.0.0"
@@ -2009,7 +2017,7 @@
     "@ng-select/ng-select" "^3.7.2"
     "@ngx-translate/core" "^12.1.2"
     "@ngx-translate/http-loader" "^4.0.0"
-    "@vendure/common" "^0.11.0"
+    "@vendure/common" "^0.15.0"
     "@webcomponents/custom-elements" "^1.2.4"
     apollo-angular "^1.8.0"
     apollo-cache-inmemory "^1.6.5"
@@ -2038,25 +2046,26 @@
     tslib "^1.10.0"
     zone.js "~0.10.2"
 
-"@vendure/common@^0.11.0":
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/@vendure/common/-/common-0.11.0.tgz#8b4489f26745e20e4f6b7e444d72b8857a37014c"
-  integrity sha512-jAhrcs441mV1SR9b+I/cB5bt9kZDDniDaiav493EHQ0r6QNsCCfRpTYZAbSIVmmWJqZU4F6EZ011Vk0qS6YRQw==
+"@vendure/common@^0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@vendure/common/-/common-0.15.0.tgz#c84624cecce71b02b28855da0f5c268054417cb9"
+  integrity sha512-PZu6cQIwYgKnlFjSWMP8EiFlaB/cR7UbDNJidmnBK7u3PgIlwL94TADq26ind2Azef//mkHjI3D6JXNrYRq66Q==
 
-"@vendure/core@^0.11.0":
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/@vendure/core/-/core-0.11.0.tgz#a006445e1711c3d10bf4d13143f886fce8001c90"
-  integrity sha512-93/Z/byA7uVHjC2kuyu/N67KSlf1YjAdUJ5q3TEAW5SWUWGh9gpTL/4wdo60KVkpsKRlU0KuYAVRi/28ml/Evw==
+"@vendure/core@^0.15.0":
+  version "0.15.2"
+  resolved "https://registry.yarnpkg.com/@vendure/core/-/core-0.15.2.tgz#6ace2061461158ccd6247ecbc5ac56766ed9b5e4"
+  integrity sha512-CQ8xyo4/gDT+0jhShVXjPovV0xrUR62W2t2MOnaVkWLWgYmtC5HY8Bz3wYyuw8b3v0IDbO8Yfe4gq1bza6x/mg==
   dependencies:
     "@nestjs/common" "7.0.5"
     "@nestjs/core" "7.0.5"
     "@nestjs/graphql" "7.0.14"
     "@nestjs/microservices" "7.0.5"
     "@nestjs/platform-express" "7.0.5"
+    "@nestjs/terminus" "7.0.1"
     "@nestjs/testing" "7.0.5"
     "@nestjs/typeorm" "7.0.0"
     "@types/fs-extra" "^8.0.1"
-    "@vendure/common" "^0.11.0"
+    "@vendure/common" "^0.15.0"
     apollo-server-express "2.11.0"
     bcrypt "^4.0.1"
     body-parser "^1.19.0"
@@ -2085,17 +2094,17 @@
     rxjs "^6.3.3"
     typeorm "0.2.24"
 
-"@vendure/ui-devkit@^0.11.0":
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/@vendure/ui-devkit/-/ui-devkit-0.11.0.tgz#06280460c7453fe912bc7bdfff3b23651ff67cb0"
-  integrity sha512-IRII7WdzoNlKCtd6IMqZfJ/jBeBG09ldmOgrANPdDuS+LRcoehfIe6S9Gr5isrKd7P+3XXuiyEF6bQ7taqYGpA==
+"@vendure/ui-devkit@^0.15.0":
+  version "0.15.2"
+  resolved "https://registry.yarnpkg.com/@vendure/ui-devkit/-/ui-devkit-0.15.2.tgz#fb28cbbede994940268225f42af1332d62b63490"
+  integrity sha512-T4bgUi/pVekirxNhkvDUInTmdZwAylWh65OQ97u28zxd85iecNXyoZIGUFdcDNCzWWFE4ry72BvEntvd7NbLcQ==
   dependencies:
     "@angular-devkit/build-angular" "~0.900.5"
     "@angular/cli" "^9.0.5"
     "@angular/compiler" "^9.0.6"
     "@angular/compiler-cli" "^9.0.6"
-    "@vendure/admin-ui" "^0.11.0"
-    "@vendure/common" "^0.11.0"
+    "@vendure/admin-ui" "^0.15.2"
+    "@vendure/common" "^0.15.0"
     chalk "^3.0.0"
     chokidar "^3.3.1"
     fs-extra "^9.0.0"
@@ -3529,6 +3538,11 @@ chardet@^0.7.0:
   resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
   integrity sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==
 
+check-disk-space@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/check-disk-space/-/check-disk-space-2.1.0.tgz#2e77fe62f30d9676dc37a524ea2008f40c780295"
+  integrity sha512-f0nx9oJF/AVF8nhSYlF1EBvMNnO+CXyLwKhPvN1943iOMI9TWhQigLZm80jAf0wzQhwKkzA8XXjyvuVUeGGcVQ==
+
 chokidar@3.3.1, "chokidar@>=2.0.0 <4.0.0", chokidar@^3.0.0, chokidar@^3.2.1, chokidar@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.3.1.tgz#c84e5b3d18d9a4d77558fef466b1bf16bbeb3450"
@@ -4440,6 +4454,11 @@ dependency-graph@^0.7.2:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/dependency-graph/-/dependency-graph-0.7.2.tgz#91db9de6eb72699209d88aea4c1fd5221cac1c49"
   integrity sha512-KqtH4/EZdtdfWX0p6MGP9jljvxSY6msy/pRUD4jgNwVpv3v1QmNLlsB3LDSSUg79BRVSn7jI1QPRtArGABovAQ==
+
+deprecate@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/deprecate/-/deprecate-1.1.1.tgz#4632e981fc815eeaf00be945a40359c0f8bf9913"
+  integrity sha512-ZGDXefq1xknT292LnorMY5s8UVU08/WKdzDZCUT6t9JzsiMSP4uzUhgpqugffNVcT5WC6wMBiSQ+LFjlv3v7iQ==
 
 deprecated-decorator@^0.1.6:
   version "0.1.6"
@@ -5685,9 +5704,9 @@ hex-color-regex@^1.1.0:
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
 highlight.js@^9.6.0:
-  version "9.18.1"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.18.1.tgz#ed21aa001fe6252bb10a3d76d47573c6539fe13c"
-  integrity sha512-OrVKYz70LHsnCgmbXctv/bfuvntIKDz177h0Co37DQ5jamGZLVmoCVMtjMtNZY3X9DrCcKfklHPNeA0uPZhSJg==
+  version "9.18.5"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.18.5.tgz#d18a359867f378c138d6819edfc2a8acd5f29825"
+  integrity sha512-a5bFyofd/BHCX52/8i8uJkjr9DYwXIPnM/plwI6W7ezItLGqzt7X2G2nXuYSfsIJdkwwj/g9DG1LkcGJI/dDoA==
 
 hmac-drbg@^1.0.0:
   version "1.0.1"
