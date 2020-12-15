@@ -1,14 +1,11 @@
 import { Injectable } from "@nestjs/common";
-import { InjectConnection } from "@nestjs/typeorm";
-import { Connection, In } from "typeorm";
+import { In } from "typeorm";
 import { FindManyOptions } from "typeorm/find-options/FindManyOptions";
 import {
   ID,
-  RequestContext,
   assertFound,
-  patchEntity,
-  getEntityOrThrow,
   Product,
+  TransactionalConnection,
 } from "@vendure/core";
 import {
   DeletionResponse,
@@ -19,7 +16,7 @@ import { ProductRecommendationInput } from "./index";
 
 @Injectable()
 export class ProductRecommendationService {
-  constructor(@InjectConnection() private connection: Connection) {}
+  constructor(private connection: TransactionalConnection) {}
 
   findAll(
     options: FindManyOptions<ProductRecommendation> | undefined
@@ -53,7 +50,7 @@ export class ProductRecommendationService {
 
   async delete(ids: ID[]): Promise<DeletionResponse> {
     try {
-      await this.connection
+      await this.connection.rawConnection
         .createQueryBuilder()
         .delete()
         .from(ProductRecommendation)

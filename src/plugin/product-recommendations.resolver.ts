@@ -13,6 +13,7 @@ import {
   RequestContext,
   ID,
   Product,
+  Transaction,
 } from "@vendure/core";
 import { Permission } from "@vendure/common/lib/generated-types";
 
@@ -29,6 +30,7 @@ export class ProductRecommendationAdminResolver {
     private productRecommendationService: ProductRecommendationService
   ) {}
 
+  @Transaction()
   @Mutation()
   @Allow(Permission.UpdateCatalog)
   async updateCrossSellingProducts(
@@ -67,6 +69,7 @@ export class ProductRecommendationAdminResolver {
     return true;
   }
 
+  @Transaction()
   @Mutation()
   @Allow(Permission.UpdateCatalog)
   async updateUpSellingProducts(
@@ -100,6 +103,7 @@ export class ProductRecommendationAdminResolver {
     return true;
   }
 
+  @Transaction()
   @Query()
   async productRecommendations(
     @Ctx() ctx: RequestContext,
