@@ -197,25 +197,6 @@
   dependencies:
     tslib "^2.0.0"
 
-"@angular/compiler-cli@10.1.4":
-  version "10.1.4"
-  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-10.1.4.tgz#b5aaa7de6173b83ce3ba066232b8c088f2428642"
-  integrity sha512-5jRL9TKSGQLlP+C3gdJmSjYv7BfzN69SuYir/o0OtBblqzsGeaA21ClPMXl/HOxjFSjnIyGgjN7Caf7VjeMJww==
-  dependencies:
-    canonical-path "1.0.0"
-    chokidar "^3.0.0"
-    convert-source-map "^1.5.1"
-    dependency-graph "^0.7.2"
-    fs-extra "4.0.2"
-    magic-string "^0.25.0"
-    minimist "^1.2.0"
-    reflect-metadata "^0.1.2"
-    semver "^6.3.0"
-    source-map "^0.6.1"
-    sourcemap-codec "^1.4.8"
-    tslib "^2.0.0"
-    yargs "15.3.0"
-
 "@angular/compiler-cli@^10.1.4":
   version "10.2.3"
   resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-10.2.3.tgz#b43cf9e6ed163645959010c6421fb88819a5943c"
@@ -1744,7 +1725,7 @@
   dependencies:
     uuid "8.3.0"
 
-"@ng-select/ng-select@^5.0.3", "@ng-select/ng-select@^5.0.9":
+"@ng-select/ng-select@^5.0.3":
   version "5.0.9"
   resolved "https://registry.yarnpkg.com/@ng-select/ng-select/-/ng-select-5.0.9.tgz#3b52b49e04280fdddeacd59e79f381219bd2cf16"
   integrity sha512-YZeSAiS8/Nx/eHZJPmOOYL8YmcvSq+dr1P8WIrsKmRA7mueorBpPc5xlUj+nLQbpLtsiQvdWDQspf/ykOvD/lA==
@@ -11930,9 +11911,9 @@ xxhashjs@^0.2.1:
     cuint "^0.2.2"
 
 y18n@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/y18n/-/y18n-4.0.0.tgz#95ef94f85ecc81d007c264e190a120f0a3c8566b"
-  integrity sha512-r9S/ZyXu/Xu9q1tYlpsLIsa3EeLXXk0VwlxqTcFRfg9EhMW+17kbt9G0NrgCmhGb5vT2hyhJZLfDGx+7+5Uj/w==
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-4.0.1.tgz#8db2b83c31c5d75099bb890b23f3094891e247d4"
+  integrity sha512-wNcy4NvjMYL8gogWWYAO7ZFWFfHcbdbE57tZO8e4cbpj8tfUcwrwqSl3ad8HxpYWCdXcJUCeKKZS62Av1affwQ==
 
 y18n@^5.0.5:
   version "5.0.5"
