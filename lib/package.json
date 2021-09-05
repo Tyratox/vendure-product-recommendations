@@ -1,7 +1,7 @@
 {
   "name": "vendure-product-recommendations",
-  "version": "0.1.18",
-  "main": "./lib/index.js",
+  "version": "0.1.21",
+  "main": "./index.js",
   "description": "Adds product recommendations to vendure",
   "repository": "https://github.com/Tyratox/vendure-product-recommendations",
   "author": "Nico Hauser",
@@ -10,26 +10,19 @@
     "build": "rimraf lib && tsc && cp package.json ./lib/ && cp README.md ./lib/ && cp -r ./src/ui-extensions ./lib/ui-extensions"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1001.4",
-    "@angular-devkit/build-ng-packagr": "^0.1002.0",
-    "@angular/compiler-cli": "^10.1.4",
+	"@apollo/gateway": "0.26.0",
     "@types/prosemirror-menu": "^1.0.1",
     "@types/prosemirror-model": "^1.7.2",
     "@types/prosemirror-state": "^1.2.3",
     "@types/prosemirror-view": "^1.11.4",
-    "@vendure/admin-ui-plugin": "^0.17.3",
-    "@vendure/common": "^0.17.3",
-    "@vendure/core": "^0.17.3",
-    "@vendure/ui-devkit": "^0.17.3",
-    "ng-packagr": "^9.0.0",
+    "@vendure/admin-ui-plugin": "^1.2.0",
+    "@vendure/common": "^1.2.0",
+    "@vendure/core": "^1.2.0",
+    "@vendure/ui-devkit": "^1.2.0",
     "rimraf": "^3.0.2",
-    "typescript": "^4.0.2"
+    "typescript": "^4.4.2"
   },
   "dependencies": {
-    "@ng-select/ng-select": "^5.0.3",
-    "tslib": "^1.11.1"
-  },
-  "peerDependencies": {
-    "@vendure/core": "^0.17.3"
+    "tslib": "^2.3.1"
   }
 }

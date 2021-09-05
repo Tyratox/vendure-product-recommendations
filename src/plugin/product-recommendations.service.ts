@@ -63,7 +63,7 @@ export class ProductRecommendationService {
     } catch (e) {
       return {
         result: DeletionResult.NOT_DELETED,
-        message: e.toString(),
+        message: e instanceof Error ? e.toString() : "",
       };
     }
   }
