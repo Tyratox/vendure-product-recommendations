@@ -1,13 +1,13 @@
 {
   "name": "vendure-product-recommendations",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "main": "./index.js",
   "description": "Adds product recommendations to vendure",
   "repository": "https://github.com/Tyratox/vendure-product-recommendations",
   "author": "Nico Hauser",
   "license": "MIT",
   "scripts": {
-    "build": "rimraf lib && tsc && cp package.json ./lib/ && cp README.md ./lib/ && cp -r ./src/ui-extensions ./lib/ui-extensions"
+    "build": "rimraf lib && tsc && cp package.json ./lib/ && cp README.md ./lib/"
   },
   "devDependencies": {
 	"@apollo/gateway": "0.26.0",
